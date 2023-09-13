@@ -1,0 +1,3731 @@
+[
+    {
+        "web_pages": [
+            "http://www.academiaga.ru/"
+        ],
+        "name": "St. Petersburg State University of Civil Aviation",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "academiaga.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://mai.ru/"
+        ],
+        "name": "Moscow Aviation Institute",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mai.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.adygnet.ru/"
+        ],
+        "name": "Adygeja State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "adygnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ael.ru/"
+        ],
+        "name": "Khabarovsk State Academy of Economics and Law",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ael.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://agma.astranet.ru/"
+        ],
+        "name": "Astrahan State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "agma.astranet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.agtu.ru/"
+        ],
+        "name": "Arhangelsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "agtu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ame.ru/"
+        ],
+        "name": "Academy of Management and Entrepreneurship",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ame.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.amursu.ru/"
+        ],
+        "name": "Amur State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "amursu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.aqua.sci-nnov.ru/"
+        ],
+        "name": "Volga State Academy of Water Transport",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "aqua.sci-nnov.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://artacademy.spb.ru/"
+        ],
+        "name": "St. Petersburg Repin State Academic Institute of Painting Sculpture and Achitecture",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "artacademy.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.asmu.ru/"
+        ],
+        "name": "Altai State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "asmu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.aspu.ru/"
+        ],
+        "name": "Astrakhan State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "aspu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.astu.org/"
+        ],
+        "name": "Astrahan State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "astu.org"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.astu.secna.ru/"
+        ],
+        "name": "Altai State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "astu.secna.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.asu.ru/"
+        ],
+        "name": "Altai State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "asu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.avtlg.ru/~vlgmed/"
+        ],
+        "name": "Volgograd Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "avtlg.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bashedu.ru/"
+        ],
+        "name": "Bashkir State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bashedu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bigpi.biysk.ru/wwwsite/"
+        ],
+        "name": "Biysk State Padagogical University after V.M. Shukshin",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bigpi.biysk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bmstu.ru/"
+        ],
+        "name": "Bauman Moscow State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bmstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.brstu.ru/"
+        ],
+        "name": "Bratsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "brstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bsaa.ru/"
+        ],
+        "name": "Belgorod State Agricultural Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bsaa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bspu.ru/"
+        ],
+        "name": "Bashkir State Pedagogical University named After M. Akmullah",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bspu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bstu.ru/"
+        ],
+        "name": "Belgorod State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bsu.burnet.ru/"
+        ],
+        "name": "Burjat State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bsu.burnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.bsu.edu.ru/"
+        ],
+        "name": "Belgorod State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "bsu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://mosgu.ru/en/"
+        ],
+        "name": "Moscow External University of the Humanities",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mosgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.chuvsu.ru/"
+        ],
+        "name": "Chuvash State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "chuvsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://cit.drbit.com.ru/"
+        ],
+        "name": "Novosibirsk State Academy of Economics and Mangement",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "cit.drbit.com.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.conservatoire.ru/"
+        ],
+        "name": "Novosibirsk State Music Academy M. Glinka",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "conservatoire.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.conservatory.ru/"
+        ],
+        "name": "St. Petersburg State Conservatory",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "conservatory.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://cspi.urc.ac.ru/"
+        ],
+        "name": "Cheljabinsk State Institute of Teacher Training",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "cspi.urc.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.csu.ac.ru/"
+        ],
+        "name": "Cheljabinsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "csu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.dgu.ru/"
+        ],
+        "name": "Dagestan State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "dgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.dongau.ru/"
+        ],
+        "name": "Don State Agrarian University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "dongau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.dstu.edu.ru/"
+        ],
+        "name": "Don State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "dstu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.dvgups.ru/"
+        ],
+        "name": "Far East State Transport University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "dvgups.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.dvgu.ru/"
+        ],
+        "name": "Far Eastern State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "dvgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://education.ivanovo.ru:8101/IGTA/"
+        ],
+        "name": "Ivanovo State Textile Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "education.ivanovo.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.elsu.ru/"
+        ],
+        "name": "Yelets State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "elsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.eltech.ru/"
+        ],
+        "name": "St. Petersburg State Electrotechnical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "eltech.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.engec.ru/"
+        ],
+        "name": "St. Petersburg State University of Engineering and Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "engec.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.esstu.ru/"
+        ],
+        "name": "East-Siberian State University of Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "esstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.eu.spb.ru/"
+        ],
+        "name": "European University at St.Petersburg",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "eu.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.fa.ru/"
+        ],
+        "name": "Finance Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "fa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.festu.ru/"
+        ],
+        "name": "Far Eastern State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "festu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://filine.centro.ru/Gorky/"
+        ],
+        "name": "Maxim Gorky Institute of Literature",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "filine.centro.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ftacademy.ru/"
+        ],
+        "name": "St. Petersburg State Forest-Technical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ftacademy.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gasu.ru/"
+        ],
+        "name": "Gorno-Altaisk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gasu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gitis.net/"
+        ],
+        "name": "Russian Academy of Theatre Arts",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gitis.net"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gma.ru/"
+        ],
+        "name": "State Maritine Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gnesin-academy.ru/"
+        ],
+        "name": "Gnesins Russian Academy of Music",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gnesin-academy.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gorny-ins.ru/"
+        ],
+        "name": "St. Petersburg State Mountain Institut",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gorny-ins.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gpma.ru/"
+        ],
+        "name": "St. Petersburg State Pediatric Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gpma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gti.spb.ru/"
+        ],
+        "name": "St. Petersburg State Institute of Technology (Technological University)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gti.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gturp.spb.ru/"
+        ],
+        "name": "St. Petersburg State Technological University of Plant Polymers",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gturp.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gubkin.ru/"
+        ],
+        "name": "Gubkin Russian State University of Oil and Gas",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gubkin.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.gukit.ru/"
+        ],
+        "name": "St. Petersburg State Cinema and TV University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "gukit.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.guu.ru/"
+        ],
+        "name": "State University of Management",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "guu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.herzen.spb.ru/"
+        ],
+        "name": "Herzen State Pedagogical University of Russia",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "herzen.edu.ru",
+            "herzen.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.hse.ru/"
+        ],
+        "name": "Higher School of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "hse.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.iate.obninsk.ru/"
+        ],
+        "name": "Obninsk State Technical University for Nuclear Power Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "iate.obninsk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ibch.ru/"
+        ],
+        "name": "Shemyakin–Ovchinnikov Institute of bioorganic chemistry RAS",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ibch.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ibi.spb.ru/"
+        ],
+        "name": "International Banking Institute, St. Petersburg",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ibi.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ibp-moscow.ru/"
+        ],
+        "name": "Institute of Business and Politics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ibp-moscow.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ieeu.udm.ru/"
+        ],
+        "name": "International East-European University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ieeu.udm.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.iet.ru/"
+        ],
+        "name": "Institute for the Economy in Transition",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "iet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ifmo.ru/",
+            "https://itmo.ru/"
+        ],
+        "name": "ITMO University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ifmo.ru",
+            "itmo.ru",
+            "niuitmo.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ime.ru/"
+        ],
+        "name": "Institute of Management and Economy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ime.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.intstudy.mai.ru/"
+        ],
+        "name": "State University of Aerospace Technologies",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "intstudy.mai.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.isea.irk.ru/"
+        ],
+        "name": "Irkutsk State Academy of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "isea.irk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.isea.ru/"
+        ],
+        "name": "Baikal National University of Economics and Law",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "isea.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://isma.indi.ru/"
+        ],
+        "name": "Ivanovo State Academy of Medicine",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "isma.indi.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ispu.ru/"
+        ],
+        "name": "Ivanovo State Power University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ispu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.istu.irk.ru/"
+        ],
+        "name": "Irkutsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "istu.irk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.istu.ru/"
+        ],
+        "name": "Izhevsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "istu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.isuct.ru/"
+        ],
+        "name": "Ivanovo State University of Chemistry and Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "isuct.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.isu.ru/"
+        ],
+        "name": "Irkutsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "isu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.iubnt.yar.ru/"
+        ],
+        "name": "Yaroslavl International University of Business and New Technologies",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "iubnt.yar.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.iufs.edu/"
+        ],
+        "name": "International University of Fundamental Studies, St. Petersburg",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "iufs.edu"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ivanovo.ac.ru/"
+        ],
+        "name": "Ivanovo State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ivanovo.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.jum.ru/"
+        ],
+        "name": "Jewish University in Moscow",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "jum.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://en.mpgu.su/"
+        ],
+        "name": "Moscow Pedagogical State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mpgu.su"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kai.ru/"
+        ],
+        "name": "Kazan State University of Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kai.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kalmsu.ru/"
+        ],
+        "name": "Kalmyk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kalmsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kamgu.ru/"
+        ],
+        "name": "Kamchatka State University Vitus Bering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kamgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kantiana.ru/"
+        ],
+        "name": "Immanuel Kant State University of Russia",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kantiana.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.karelia.ru/psu/"
+        ],
+        "name": "Petrozavodsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "karelia.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kazanconservatory.ru/"
+        ],
+        "name": "Kazan State Music Conservatory",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kazanconservatory.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kbsu.ru/"
+        ],
+        "name": "Kabardino-Balkarian State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kbsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kemsu.ru/"
+        ],
+        "name": "Kemerovo State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kemsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kgmu.kcn.ru/"
+        ],
+        "name": "Kazan State University of Medicine",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kgmu.kcn.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kgpu.ru/"
+        ],
+        "name": "Kazan State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kgpu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kgtu.runnet.ru/"
+        ],
+        "name": "Krasnoyarsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kgtu.runnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.khspu.ru/"
+        ],
+        "name": "Far Easten State University of Humanities",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "khspu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.khstu.ru/"
+        ],
+        "name": "Khabarovsk State University of Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "khstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kirovballet.com/vaganova.html"
+        ],
+        "name": "Vaganova Academy of Russian Ballet",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kirovballet.com"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kiu.ru/"
+        ],
+        "name": "Kurgan International University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kiu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.klgtu.ru/"
+        ],
+        "name": "Kaliningrad State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "klgtu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.knastu.ru/"
+        ],
+        "name": "Komsomolsk-on-Amur State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "knastu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ksaba.ru/"
+        ],
+        "name": "Kazan State Academy of Architecture and Civil Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ksaba.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ksfei.ru/"
+        ],
+        "name": "Kazan State Finance and Economics Institute",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ksfei.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ksmu.kursknet.ru/"
+        ],
+        "name": "Kursk State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ksmu.kursknet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://kspu.kaluga.ru/"
+        ],
+        "name": "Kaluga State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kspu.kaluga.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://kspu.ptz.ru/"
+        ],
+        "name": "Karelian State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kspu.ptz.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kstu.edu.ru/"
+        ],
+        "name": "Kostroma State Technological University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kstu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kstu.kursk.ru/"
+        ],
+        "name": "Kursk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kstu.kursk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ksu.ru/"
+        ],
+        "name": "Kazan State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ksu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kubagro.ru/"
+        ],
+        "name": "Kuban State University of Agriculture",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kubagro.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kubstu.ru/"
+        ],
+        "name": "Kuban State University of Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kubstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kubsu.ru/"
+        ],
+        "name": "Kuban State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kubsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kursk-uni.ru/"
+        ],
+        "name": "Kursk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kursk-uni.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.kuzstu.ac.ru/"
+        ],
+        "name": "Kuzbass State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "kuzstu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.lunn.sci-nnov.ru/"
+        ],
+        "name": "Linguistic University of Nizhny Novgorod",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "lunn.sci-nnov.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.madi.ru/"
+        ],
+        "name": "Moscow State Automobile and Road Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "madi.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://margu.mari.ru/"
+        ],
+        "name": "Marij State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "margu.mari.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.marstu.mari.ru/"
+        ],
+        "name": "Marij State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "marstu.mari.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.masu.ru/"
+        ],
+        "name": "Magnitogorsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "masu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mechnik.spb.ru/"
+        ],
+        "name": "St. Petersburg State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mechnik.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.medin.nsc.ru/"
+        ],
+        "name": "Novosibirsk State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "medin.nsc.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.med.sgu.ru/"
+        ],
+        "name": "Saratov State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "med.sgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mesi.ru/"
+        ],
+        "name": "Moscow State University of Economics, Statistics and Informatics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mesi.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mgavm.ru/"
+        ],
+        "name": "Skrjabin Moscow State Academy of Veterinary Medicine and Biotechnology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mgavm.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mgimo.ru/"
+        ],
+        "name": "Moscow State Institute of International Relations MFA Russia (MGIMO-University)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mgimo.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mgri-rggru.ru/"
+        ],
+        "name": "Russian State Geological Prospecting University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mgri-rggru.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://mgsu.norna.ru/"
+        ],
+        "name": "Moscow State University of Civil Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mgsu.norna.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mgul.ac.ru/"
+        ],
+        "name": "Moscow State University of Forestry Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mgul.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.miet.ru/"
+        ],
+        "name": "National Research University of Electronic Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "miet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.miigaik.ru/"
+        ],
+        "name": "Moscow State University of Geodesy and Cartography",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "miigaik.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.miit.ru/"
+        ],
+        "name": "Moscow State University of Railway Transport",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "miit.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://miom.org/"
+        ],
+        "name": "Modern Institute of Managament",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "miom.org"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mipt.ru/",
+            "http://www.phystech.edu/"
+        ],
+        "name": "Moscow Institute of Physics and Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mipt.ru",
+            "phystech.edu"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mirbis.ru/"
+        ],
+        "name": "Moscow International Higher Business School (MIRBIS)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mirbis.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mirea.ru/"
+        ],
+        "name": "Moscow State Institute of Radiotechnics, Electronics and Automation (Technical University)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mirea.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.misis.ru/"
+        ],
+        "name": "Moscow State Institute of Steel and Alloys",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "misis.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.miu.ru/"
+        ],
+        "name": "International University of Engineering, Moscow",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "miu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mma.ru/"
+        ],
+        "name": "I.M. Sechenov Moscow Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mosconsv.ru/"
+        ],
+        "name": "Moscow P. I. Tchaikovsky Conservatory",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mosconsv.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mpei.ac.ru/"
+        ],
+        "name": "Moscow Power Engineering Institute (Technical University)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mpei.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mrsu.ru/"
+        ],
+        "name": "Mordovian State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mrsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msaab.ru/"
+        ],
+        "name": "Moscow State Academy of Applied Biotechnology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msaab.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msiu.ru/"
+        ],
+        "name": "Moscow State Industrial University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msiu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msta.ac.ru/"
+        ],
+        "name": "Moscow State Textile University A.N. Kosygin",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msta.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mstuca.ru/"
+        ],
+        "name": "Moscow State Technical University of Civil Aviation",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mstuca.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mstu.edu.ru/"
+        ],
+        "name": "Murmansk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mstu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msuc.edu.ru/"
+        ],
+        "name": "Moscow State University of Culture",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msuc.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msuee.ru/"
+        ],
+        "name": "Moscow State University of Environmental Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msuee.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.msuie.ru/"
+        ],
+        "name": "Moscow State University of Ecological Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msuie.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://www.msu.ru/"
+        ],
+        "name": "Lomonosov Moscow State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "msu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.mtuci.ru/"
+        ],
+        "name": "Moscow Technical University of Informatics and Communication",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "mtuci.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.muctr.edu.ru/"
+        ],
+        "name": "Mendeleev Russian University of Chemical Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "muctr.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.muh.ru/"
+        ],
+        "name": "Modern University for the Humanities",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "muh.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nayanova.edu/"
+        ],
+        "name": "Nayanova University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nayanova.edu"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ncstu.ru/"
+        ],
+        "name": "Stavropol State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ncstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.neic.nsk.su/"
+        ],
+        "name": "Siberian State University of Telecommunications and Informatics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "neic.nsk.su"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nes.ru/"
+        ],
+        "name": "New Economic School",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nes.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ngasu.sci-nnov.ru/"
+        ],
+        "name": "Nizhny Novgorod State Architectural - Building University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ngasu.sci-nnov.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nilc.spb.ru/"
+        ],
+        "name": "Nevsky Institute of Language and Culture",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nilc.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.n-nov.mednet.com/"
+        ],
+        "name": "Nizhny Novgorod State Academy of Medicine",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "n-nov.mednet.com"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nntu.sci-nnov.ru/"
+        ],
+        "name": "Nizhny Novgorod State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nntu.sci-nnov.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nosu.ru/"
+        ],
+        "name": "North Ossetian State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nosu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.novsu.ac.ru/"
+        ],
+        "name": "Novgorod State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "novsu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nsau.edu.ru/"
+        ],
+        "name": "Novosibirsk State Agricultural University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nsau.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nsmu.ru/"
+        ],
+        "name": "Northern State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nsmu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nstu.ru/"
+        ],
+        "name": "Novosibirsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nsu.ru/"
+        ],
+        "name": "Novosibirsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nsu.ru",
+            "g.nsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.nwpi.ru/"
+        ],
+        "name": "North-West State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "nwpi.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.omgau.ru/"
+        ],
+        "name": "Omsk State Agrarian University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "omgau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.omgtu.ru/"
+        ],
+        "name": "Omsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "omgtu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.omgups.ru/"
+        ],
+        "name": "Omsk State Transport University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "omgups.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.omsk.edu/"
+        ],
+        "name": "Omsk State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "omsk.edu"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.omsk-osma.ru/"
+        ],
+        "name": "Omsk State Medicical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "omsk-osma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.orun.ru/"
+        ],
+        "name": "Oriental University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "orun.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.osu.ru/"
+        ],
+        "name": "Orenburg State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "osu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pfu.edu.ru/"
+        ],
+        "name": "People' s Friendship University of Russia",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pfu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pglu.ru/"
+        ],
+        "name": "Pjatigorsk State Linguistic University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pglu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pnzgu.ru/"
+        ],
+        "name": "Penza State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pnzgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pomorsu.ru/"
+        ],
+        "name": "Pomor State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pomorsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.psfa.ru/"
+        ],
+        "name": "Perm State Pharmaceutical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "psfa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.psma.ru/"
+        ],
+        "name": "Perm State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "psma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pspu.ac.ru/"
+        ],
+        "name": "Perm State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pspu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.pstu.ac.ru/"
+        ],
+        "name": "Perm State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "pstu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.psu.ru/"
+        ],
+        "name": "Perm State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "psu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rah.ru/"
+        ],
+        "name": "Russian Academy of Arts",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rah.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rea.ru/"
+        ],
+        "name": "Plekhanov Russian Academy of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rea.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rgata.yaroslavl.ru/"
+        ],
+        "name": "Rybinsk State Academy of Aviational Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rgata.yaroslavl.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rshu.ru/"
+        ],
+        "name": "Russian State Hydrometeorological University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rshu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rsmu.da.ru/"
+        ],
+        "name": "Rostov State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rsmu.da.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rsmu.ru/"
+        ],
+        "name": "Russian State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rsmu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rsuh.ru/"
+        ],
+        "name": "Russian State University for the Humanities",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rsuh.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rsu.ru/"
+        ],
+        "name": "Rostov State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rsute.ru/"
+        ],
+        "name": "Moscow State University of Commerce",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rsute.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.rusoil.net/"
+        ],
+        "name": "Ufa State Petroleum Technological University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "rusoil.net"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sakhgu.sakhalin.ru/"
+        ],
+        "name": "Sakhalin State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sakhgu.sakhalin.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.samiit.ru/"
+        ],
+        "name": "Samara State Academy for Railway Transportation",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "samiit.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.samsmu.ru/"
+        ],
+        "name": "Samara State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "samsmu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sapanet.ru/"
+        ],
+        "name": "Siberian Academy of Public Services",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sapanet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sgap.ru/"
+        ],
+        "name": "Saratov State Academy of Law",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sgap.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sgau.ru/"
+        ],
+        "name": "Saratov State Agrarian University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sgau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sgma.info/"
+        ],
+        "name": "Smolensk State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sgma.info"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sgu.ru/"
+        ],
+        "name": "Saratov State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sgu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://shu.smolensk.su/"
+        ],
+        "name": "Smolensk Humanitarian University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "shu.smolensk.su"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://sibsiu.kemerovo.su/"
+        ],
+        "name": "Siberian State Industrial University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sibsiu.kemerovo.su"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.smolny-un.spb.ru/"
+        ],
+        "name": "Smolny University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "smolny-un.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.smtu.ru/"
+        ],
+        "name": "St. Petersburg State Marine Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "smtu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbau.ru/"
+        ],
+        "name": "Academic University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbgasu.ru/"
+        ],
+        "name": "St. Petersburg State University of Architecture and Civil Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbgasu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbgau.spb.ru/"
+        ],
+        "name": "St. Petersburg State Agrarian University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbgau.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbguki.ru/"
+        ],
+        "name": "St. Petersburg State University of Culture and Arts",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbguki.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbiir.ru/"
+        ],
+        "name": "St. Petersburg Institute of Arts and Restoration",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbiir.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbstu.ru/"
+        ],
+        "name": "St. Petersburg State Polytechnical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbtei.ru/"
+        ],
+        "name": "St. Petersburg Institute of Sales Management and Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbtei.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbu.ru/"
+        ],
+        "name": "St. Petersburg State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spbuwc.ru/"
+        ],
+        "name": "St. Petersburg State University of Waterway Communications",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spbuwc.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spcpa.ru/"
+        ],
+        "name": "St. Petersburg State Chemical Pharmaceutical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spcpa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spmi.edu.ru/"
+        ],
+        "name": "St. Petersburg State Mining Institute (Technical University)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spmi.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.spsmma.com/"
+        ],
+        "name": "St. Petersburg StateMechnikov  Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "spsmma.com"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssaa.ru/"
+        ],
+        "name": "Samara State Agricultural Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssaa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssaba.smr.ru/"
+        ],
+        "name": "Samara State Academy of Architecture and Civil Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssaba.smr.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssau.ru/"
+        ],
+        "name": "Samara State Aerospace University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssea.runnet.ru/"
+        ],
+        "name": "Saratov State Socio-Economic University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssea.runnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sseu.ru/"
+        ],
+        "name": "Samara State University of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sseu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssmu.ru/"
+        ],
+        "name": "Siberian State Medical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssmu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssttu.samara.ru/"
+        ],
+        "name": "Samara State University of Teacher Training",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssttu.samara.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sstu-edu.ru/"
+        ],
+        "name": "Saratov State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sstu-edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sstu.samara.ru/"
+        ],
+        "name": "Samara State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sstu.samara.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://ssu.komi.com:8101/"
+        ],
+        "name": "Syktyvkar State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssu.komi.com"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ssu.samara.ru/"
+        ],
+        "name": "Samara State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ssu.samara.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.stankin.ru/"
+        ],
+        "name": "Moscow State University of Technology (Stankin)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "stankin.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.stavsu.ru/"
+        ],
+        "name": "Stavropol State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "stavsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.stu.lipetsk.ru/"
+        ],
+        "name": "Lipeck State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "stu.lipetsk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.stu.ru/"
+        ],
+        "name": "Siberian State Transport University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "stu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.suai.ru/"
+        ],
+        "name": "St. Petersburg State University of Aerospace Instrumentation",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "suai.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.surgu.wsnet.ru/"
+        ],
+        "name": "Surgut State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "surgu.wsnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sutd.ru/"
+        ],
+        "name": "St. Petersburg State University of Technology and Design",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sutd.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.sut.ru/"
+        ],
+        "name": "St. Petersburg State University of Telecommunication",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "sut.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tart.spb.ru/"
+        ],
+        "name": "St. Petersburg State Theatre Arts Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tart.spb.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tgpi.ttn.ru/"
+        ],
+        "name": "Taganrog State Pedagogical Institute",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tgpi.ttn.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tgsha.ru/"
+        ],
+        "name": "Tyumen State Agricultural Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tgsha.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.theatrins-yar.ru/"
+        ],
+        "name": "Yaroslavl State Theatre Institute",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "theatrins-yar.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.timacad.ru/"
+        ],
+        "name": "Timirjazev Moscow Academy of Agricultutre",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "timacad.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tltsu.ru/"
+        ],
+        "name": "Togliatti State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tltsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.touro.ru/"
+        ],
+        "name": "Moscow University Touro",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "touro.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tpu.ru/"
+        ],
+        "name": "Tomsk Polytechnic University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tpu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsma.ru/"
+        ],
+        "name": "Tver State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsma.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsogu.ru/"
+        ],
+        "name": "Tyumen State University of Gas and Oil",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsogu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tspu.edu.ru/"
+        ],
+        "name": "Tomsk State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tspu.edu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tstu.ru/"
+        ],
+        "name": "Tambov State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tstu.tver.ru/"
+        ],
+        "name": "Tver State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tstu.tver.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsuab.ru/"
+        ],
+        "name": "Tomsk State University of Architecture and Building",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsuab.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsure.ru/"
+        ],
+        "name": "Taganrog State University of Radioengineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsure.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsu.ru/"
+        ],
+        "name": "Tomsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://www.utmn.ru/"
+        ],
+        "name": "Tyumen State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "utmn.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tsu.tula.ru/"
+        ],
+        "name": "Tula State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tsu.tula.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ttc.ryazan.ru/"
+        ],
+        "name": "Ryazan State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ttc.ryazan.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tu-bryansk.ru/"
+        ],
+        "name": "Brjansk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tu-bryansk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tu-chel.ac.ru/"
+        ],
+        "name": "Southern Ural State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tu-chel.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.tusur.ru/"
+        ],
+        "name": "Tomsk State University of Control Systems and Radioelectronics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tusur.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://tuvsu.ru/"
+        ],
+        "name": "Tuva State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "tuvsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uapa.ru/"
+        ],
+        "name": "Ural Academy of Public Administration",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uapa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uef.ru/"
+        ],
+        "name": "St. Petersburg State University of Economics and Finance",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uef.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ugatu.ac.ru/"
+        ],
+        "name": "Ufa State Aviation Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ugatu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ugrasu.ru/"
+        ],
+        "name": "Yugra State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ugrasu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ugsha.ru/"
+        ],
+        "name": "Ulyanovsk State Agricultural Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ugsha.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://uii.sever.ru/"
+        ],
+        "name": "Ukhta State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uii.sever.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ulspu.ru/"
+        ],
+        "name": "Ulyanovsk State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ulspu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ulstu.ru/"
+        ],
+        "name": "Ulyanovsk State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ulstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ulsu.ru/"
+        ],
+        "name": "Ulyanovsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ulsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uni-dubna.ru/"
+        ],
+        "name": "Dubna International University for Nature, Society and Man",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uni-dubna.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.unilib.neva.ru/"
+        ],
+        "name": "St. Petersburg State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "unilib.neva.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uni.udm.ru/"
+        ],
+        "name": "Udmurt State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uni.udm.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.univer.omsk.su/"
+        ],
+        "name": "Omsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "univer.omsk.su"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://university.tversu.ru/"
+        ],
+        "name": "Tver State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "university.tversu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uni-vologda.ac.ru/"
+        ],
+        "name": "Vologda State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uni-vologda.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uniyar.ac.ru/"
+        ],
+        "name": "Yaroslavl State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uniyar.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.unn.ac.ru/"
+        ],
+        "name": "Nizhny Novgorod State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "unn.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.urc.ac.ru/Universities/AGRO/"
+        ],
+        "name": "Cheljabinsk University of Agricultural Engineering",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "urc.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usaaa.ru/"
+        ],
+        "name": "Ural State Academy of Architecture and Arts",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usaaa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usart.ru/"
+        ],
+        "name": "Ural State Academy of Railway Transport",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usart.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uscon.ru/"
+        ],
+        "name": "Ural State Conservatory",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uscon.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usfea.ru/"
+        ],
+        "name": "Ural State Forestry Technical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usfea.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usla.ru/"
+        ],
+        "name": "Ural State Academy of Law",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usla.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usmga.ru/"
+        ],
+        "name": "Ural State Academy of Mining and Geology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usmga.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://urfu.ru"
+        ],
+        "name": "Ural Federal University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "urfu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usue.ru/"
+        ],
+        "name": "Ural State University of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usue.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.usu.ru/"
+        ],
+        "name": "Ural Gorkij State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "usu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.uvauga.ru/"
+        ],
+        "name": "Ulyanovsk Higher School of Civil Aviation",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "uvauga.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vfrta.ru/"
+        ],
+        "name": "Russian Customs Academy, Vladivostok Branch",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vfrta.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vgafk.ru/"
+        ],
+        "name": "Volgograd State Academy of Physical Education",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vgafk.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vgasa.ru/"
+        ],
+        "name": "Volgograd State University of Architecture and Civil Engineering (VolgGASU)",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vgasa.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vgta.vrn.ru/"
+        ],
+        "name": "Voronezh State Academy of Technology",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vgta.vrn.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vieup.ru/"
+        ],
+        "name": "NGO Vladikavkaz Institute of Economics, Management, and Law",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vieup.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vlsu.ru/"
+        ],
+        "name": "Vladimir State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vlsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.voenmeh.ru/"
+        ],
+        "name": "Baltic State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "voenmeh.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.volsu.ru/"
+        ],
+        "name": "Volgograd State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "volsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vorstu.ac.ru/"
+        ],
+        "name": "Voronezh State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vorstu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vsau.ru/"
+        ],
+        "name": "Voronezh State Agricultural University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vsau.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vsgaki.burnet.ru/"
+        ],
+        "name": "East-Siberian State Institute of Culture",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vsgaki.burnet.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vsgtu.eastsib.ru/"
+        ],
+        "name": "East-Siberian State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vsgtu.eastsib.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vsma.info/"
+        ],
+        "name": "Voronezh State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vsma.info"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vspu.ac.ru/"
+        ],
+        "name": "Voronezh State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vspu.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vspu.kirov.ru/"
+        ],
+        "name": "Vyatka State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vspu.kirov.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vspu.ru/"
+        ],
+        "name": "Volgograd State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vspu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vstu.ru/"
+        ],
+        "name": "Volgograd State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vstu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vsu.ru/"
+        ],
+        "name": "Voronezh State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.vvsu.ru/"
+        ],
+        "name": "Vladivostock State University of Economics",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "vvsu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.yma.ac.ru/"
+        ],
+        "name": "Yaroslavl State Medical Academy",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "yma.ac.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.yspu.yar.ru/"
+        ],
+        "name": "Yaroslavl State Pedagogical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "yspu.yar.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ystu.yar.ru/"
+        ],
+        "name": "Yaroslavl State Technical University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ystu.yar.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "http://www.ysu.ru/"
+        ],
+        "name": "Yakutsk State University",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "ysu.ru"
+        ],
+        "country": "Russian Federation"
+    },
+    {
+        "web_pages": [
+            "https://synergy.ru/",
+            "http://synergy.university/"
+        ],
+        "name": "Moscow University for Industry and Finance “Synergy”",
+        "alpha_two_code": "RU",
+        "state-province": null,
+        "domains": [
+            "synergy.ru",
+            "synergy.university"
+        ],
+        "country": "Russian Federation"
+    }
+]

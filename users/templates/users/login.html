@@ -1,0 +1,125 @@
+{% extends 'users/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<style>
+  @media handheld, screen and (width<768px) {
+    .wrapper {
+      padding-top: 21vh;
+    }
+  }
+</style>
+<body>
+  <div class="split left">
+    <div class="logo">
+      <div>
+        <img
+          src="{% static 'vendor/img/Logo-blue.svg' %}"
+          style="margin-left: 5%"
+        />
+      </div>
+      <div class="ms-auto" style="margin-right: 5%">
+        <form id="language-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select id="language-select" name="language" onchange="changeLanguage()"
+                    class="body-text secondary bg-white">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go" style="display: none;">
+</form>
+
+<script>
+    const languageSelect = document.getElementById('language-select');
+    const languageForm = document.getElementById('language-form');
+
+    languageSelect.addEventListener('change', () => {
+        languageForm.submit();
+    });
+</script>
+      </div>
+    </div>
+    <div class="wrapper fadeInDown">
+      <div id="formContent">
+        <div class="text-center mb-4">
+          <h2>{% trans "Вход" %}</h2>
+          <text class="body-text secondary"
+            >{% trans "Добро пожаловать" %}!<br />{% trans "Пожалуйста, введите свои данные." %}</text
+          >
+        </div>
+        <form action="{% url 'users:login' %}" method="post">
+          {% csrf_token %}
+          <!--{{ form.as_p }}-->
+          <div class="mb-3">
+            <label
+              for="{{ form.username.id_for_label }}"
+              class="form-label mb-0"
+              >Email</label
+            >
+            {{ form.username }}
+          </div>
+          <div class="mb-3 input-with-icon">
+            <label for="{{ form.password.id_for_label }}" class="form-label mb-0">{% trans "Пароль" %}</label>
+            {{ form.password }}
+            <button class="toggle-password" type="button" onclick="togglePasswordVisibility(this)">
+              <img src="{% static 'vendor/img/eye-open.svg' %}" alt="Показать/Скрыть пароль" />
+            </button>
+          </div>
+           <div class="text-center">
+            <button
+              id="btn_entrance"
+              type="submit"
+              class="btn btn-secondary w-100 disabled"
+            >
+              <span id="buttonText">{% trans "Войти" %}</span>
+            </button>
+          </div>
+          <div class="d-flex mt-2 justify-content-between">
+            <div>
+              {{ form.remember_me }}
+              <label
+                class="form-check-label"
+                for="{{form.remember_me.id_for_label}}"
+              >
+                {% trans "Запомнить меня" %}
+              </label>
+            </div>
+            <div>
+              <a class="link" href="{% url 'users:password_reset' %}">{% trans "Восстановить пароль" %}</a>
+            </div>
+          </div>
+        </form>
+        <div class="d-flex justify-content-center mt-2 gap-3">
+          <div>
+            <text class="body-text secondary">{% trans "Нет аккаунта?" %}</text>
+          </div>
+          <div>
+            <a class="link primary" href="{% url 'users:registration' %}"
+              >{% trans "Зарегистрироваться" %}</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+   {% if messages %}
+        {% for message in messages %}
+        <div class="toasts-error">
+            <div class="toast-body">
+              <p class="body-text m-0" >{{ message }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      {% endif %}
+  <div class="split right empty">
+    <div class="centered slideshow-container">
+      <img src="{% static 'vendor/img/entrance.svg' %}" alt="Avatar man" />
+    </div>
+  </div>
+</body>
+{% endblock %}

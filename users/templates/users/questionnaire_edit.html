@@ -1,0 +1,678 @@
+{% extends 'users/base.html' %} {% load static %} {% load cache %} {% load i18n %} {% block content %}
+<style>
+  .label {
+    padding: 2px 16px;
+    font-size: var(--macro-text);
+    line-height: 24px;
+    color: var(--gray-900);
+    border: 1px solid var(--gray-900);
+    border-radius: 200px;
+  }
+  .checkbox-btn {
+    display: inline-block;
+    user-select: none;
+    position: relative;
+  }
+  .checkbox-btn input[type="checkbox"] {
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  .checkbox-btn span {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 28px;
+    border-radius: 200px;
+    color: #0029ff;
+    border: solid #0029ff;
+    border-width: 1px;
+    transition: background 0.2s ease;
+  }
+
+  /* Checked */
+  .checkbox-btn input[type="checkbox"]:checked + span {
+    background: var(--primary-color);
+    color: white;
+  }
+
+  /* Focus */
+  .focused span {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* Active */
+  .checkbox-btn input[type="checkbox"]:active:not(:disabled) + span {
+    background: #0029ff;
+    color: #fff;
+  }
+  .circle {
+    padding: 2px 16px;
+    font-size: var(--macro-text);
+    line-height: 24px;
+    color: var(--gray-900);
+    border: 1px solid var(--gray-900);
+    border-radius: 200px;
+  }
+
+  .button-right .btn:hover {
+    background-color: var(--gray-300);
+  }
+  .circle {
+    padding: 2px 16px;
+    font-size: var(--macro-text);
+    line-height: 24px;
+    color: var(--gray-900);
+    border: 1px solid var(--gray-900);
+    border-radius: 200px;
+  }
+  .button-right {
+    background-color: rgb(248, 248, 248);
+    border-radius: 16px;
+    height: 224px;
+    width: 416px;
+  }
+  .wrap {
+    background-color: rgb(248, 248, 248);
+    border-radius: 16px;
+    height: 87.7%;
+    width: 636px;
+    margin-bottom: 24px;
+  }
+  .wrap-content {
+    padding: 0px 0 0 114px;
+  }
+  .form-control {
+    width: 80%;
+  }
+  .form-select {
+    width: 80%;
+  }
+  .wrap-content input {
+    width: 80%;
+  }
+  .Anketa {
+    color: var(--gray-800);
+    margin: 0;
+  }
+  .settings {
+    color: var(--gray-900);
+    padding: 32px 237px 7px 48px;
+  }
+  .button-interests {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* Style the SVG icon */
+  .pencil {
+    width: 24px;
+    height: 24px;
+    fill: #0029ff;
+    transition: fill 0.3s ease; /* Transition effect for color change */
+  }
+  button:hover .pencil path {
+    fill: #2927b6; /* New fill color on hover (red in this example) */
+  }
+  .wrap-content2 {
+    padding: 64px 0 0 114px;
+  }
+  .exit-profile button {
+    width: 31%;
+  }
+  .exit-profile p {
+    color: var(--body-color);
+    margin: 0;
+  }
+  .grid-interests {
+    gap: 16px;
+    margin-inline: auto;
+  }
+  .grid-interests2 {
+    gap: 16px;
+    margin-inline:auto;
+    width:523px;
+  }
+  .text-interests {
+    width: 465px;
+  }
+  @media handheld, screen and (width<991px) {
+    .text-interests {
+      width: 67.2%;
+    }
+    .grid-interests {
+      gap: 8px;
+      width: 300px;
+    }
+    .grid-interests2 {
+      gap: 8px;
+      width: 325px;
+    }
+    .wrap-content2 {
+      padding: 0;
+    }
+    .arrow {
+      position: absolute;
+      left: 36px;
+      padding-top: 22px;
+    }
+    .Anketa {
+      color: var(--gray-800);
+      margin: 0;
+      font-size: 20px;
+      line-height: auto;
+      font-weight: 600;
+      margin: 24px 0 0 70px;
+    }
+    .wrap {
+      height: 76.7%;
+      width: 93.1%;
+    }
+    .button-right {
+      height: 224px;
+      width: 93.1%;
+    }
+    .wrap-content {
+      padding: 0px 0 0 24px;
+    }
+    .form-control {
+      width: 93.1%;
+    }
+    .form-select {
+      width: 93.1%;
+    }
+    .wrap-content input {
+      width: 93.1%;
+    }
+    .photo-button {
+      position: relative;
+      border-radius: 9px;
+      display: flex;
+      transition: all 0.3s ease-in-out;
+      cursor: default;
+      width: 140px;
+      height: 140px;
+      border-radius: 8px;
+      background-color: var(--gray-500);
+      justify-content: center;
+      align-items: center;
+    }
+    .settings {
+      color: var(--gray-800);
+      margin: 0;
+      font-size: 20px;
+      line-height: auto;
+      font-weight: 600;
+    }
+    .button-right {
+      margin-bottom: 30px;
+    }
+    .body-text {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+    h2 {
+      color: #152536;
+      font-size: 24px;
+      line-height: auto;
+      font-weight: 600;
+    }
+  }
+</style>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">
+        <img class="logo_white" src="{% static 'vendor/img/logo-white.svg' %}" alt="Logo" />
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border: none; margin-right: -3%"
+      >
+        <span
+          ><img src="{% static 'vendor/img/hamburger-md-svgrepo-com.svg' %}" style="width: 30px" alt=""
+        /></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="navbarNav"
+        aria-labelledby="navbarNavLabel"
+      >
+        <div class="offcanvas-header">
+          <div class="navbar-brand">
+            <img class="logo" src="{% static 'vendor/img/Logo-blue.svg' %}" alt="" />
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'users:profiles' %}">{% trans "Анкеты" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'users:profile' user.id %}">{% trans "Профиль" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'ino_main:about' %}">{% trans "О проекте" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <form id="language-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select id="language-select" name="language" onchange="changeLanguage()"
+                    class="lang-navbar">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go" style="display: none;">
+</form>
+
+<script>
+    const languageSelect = document.getElementById('language-select');
+    const languageForm = document.getElementById('language-form');
+
+    languageSelect.addEventListener('change', () => {
+        languageForm.submit();
+    });
+</script>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div
+    class="d-flex flex-wrap justify-content-center"
+    style="gap: 16px; padding-top: 32px"
+  >
+    <div class="arrow">
+      <input
+        type="image"
+        src="{% static 'vendor/img/arrow-left.svg' %}"
+        onclick="history.back();"
+      />
+    </div>
+
+    <div class="wrap">
+      <form method="post" action="{% url 'users:questionnaire_edit' user.pk %}" id="qf">
+        {% csrf_token %}
+        <div class="wrap-content2">
+          <div>
+            <h3 class="Anketa">{% trans "Анкета" %}</h3>
+          </div>
+        </div>
+        <section class="wrap-content">
+          <div style="padding-top: 24px">
+            <label
+              for="{{qf.birthdate.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Дата рождения" %}</label
+            >
+            <span class="star">*</span>
+            {{ qf.birthdate }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{qf.gender.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Пол" %}</label
+            ><span class="star"> *</span>
+            {{ qf.gender }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{qf.native_language.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Родной язык" %}</label
+            ><span class="star"> *</span>
+            {{ qf.native_language }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{qf.preferred_language.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Изучаемый язык" %}</label
+            ><span class="star"> *</span>
+            {{ qf.preferred_language }}
+          </div>
+
+          <div style="padding-top: 32px">
+            <h5 style="color: var(--gray-800); margin: 0">{% trans "Личная информация" %}</h5>
+          </div>
+          <div style="margin-top: 16px">
+            <label
+              for="{{qf.native_country.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Родная страна" %}</label
+            ><span class="star"> *</span>
+            {{ qf.native_country }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{qf.residence_city.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Город проживания" %}</label
+            >
+            {{ qf.residence_city }}
+          </div>
+          <div style="padding-top: 32px">
+            <h5 style="color: var(--gray-800); margin: 0">{% trans "Образование" %}</h5>
+          </div>
+          <div style="margin-top: 16px">
+            <label
+              for="{{qf.university.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "ВУЗ" %}</label
+            >
+            {{ qf.university }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{qf.specialty.id_for_label}}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Специальность" %}</label
+            >
+            {{ qf.specialty }}
+          </div>
+          <div style="padding-top: 32px; width: 80%">
+            <div class="d-flex">
+              <h5 style="color: var(--gray-800); margin: 0 0 16px">{% trans "Интересы" %}</h5>
+              <button
+                data-bs-target="#Interests_modal"
+                data-bs-toggle="modal"
+                class="button-interests"
+                style="margin-left: 16px"
+                type="button"
+              >
+                <svg
+                  class="pencil"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.2526 2.9101C23.3927 3.05069 23.4714 3.2411 23.4714 3.4396C23.4714 3.63811 23.3927 3.82852 23.2526 3.9691L21.6881 5.5351L18.6881 2.5351L20.2526 0.969102C20.3932 0.828498 20.584 0.749512 20.7828 0.749512C20.9817 0.749512 21.1724 0.828498 21.3131 0.969102L23.2526 2.9086V2.9101ZM20.6276 6.5941L17.6276 3.5941L7.40807 13.8151C7.32552 13.8976 7.26337 13.9983 7.22657 14.1091L6.01907 17.7301C5.99717 17.7961 5.99407 17.8669 6.01009 17.9346C6.02612 18.0023 6.06066 18.0642 6.10984 18.1133C6.15901 18.1625 6.2209 18.1971 6.28858 18.2131C6.35626 18.2291 6.42706 18.226 6.49307 18.2041L10.1141 16.9966C10.2247 16.9602 10.3254 16.8986 10.4081 16.8166L20.6276 6.5956V6.5941Z"
+                    fill="#0029FF"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.5 20.25C1.5 20.8467 1.73705 21.419 2.15901 21.841C2.58097 22.2629 3.15326 22.5 3.75 22.5H20.25C20.8467 22.5 21.419 22.2629 21.841 21.841C22.2629 21.419 22.5 20.8467 22.5 20.25V11.25C22.5 11.0511 22.421 10.8603 22.2803 10.7197C22.1397 10.579 21.9489 10.5 21.75 10.5C21.5511 10.5 21.3603 10.579 21.2197 10.7197C21.079 10.8603 21 11.0511 21 11.25V20.25C21 20.4489 20.921 20.6397 20.7803 20.7803C20.6397 20.921 20.4489 21 20.25 21H3.75C3.55109 21 3.36032 20.921 3.21967 20.7803C3.07902 20.6397 3 20.4489 3 20.25V3.75C3 3.55109 3.07902 3.36032 3.21967 3.21967C3.36032 3.07902 3.55109 3 3.75 3H13.5C13.6989 3 13.8897 2.92098 14.0303 2.78033C14.171 2.63968 14.25 2.44891 14.25 2.25C14.25 2.05109 14.171 1.86032 14.0303 1.71967C13.8897 1.57902 13.6989 1.5 13.5 1.5H3.75C3.15326 1.5 2.58097 1.73705 2.15901 2.15901C1.73705 2.58097 1.5 3.15326 1.5 3.75V20.25Z"
+                    fill="#0029FF"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="d-flex flex-row mb-2 gap-2 flex-wrap">
+              {% for hobby in user.hobby.all %}
+                <span class="circle">{{hobby.title}}</span>
+              {% endfor %}
+            </div>
+          </div>
+          <input
+            type="submit"
+            class="btn btn-secondary mini-text"
+            value="{% trans 'Сохранить' %}"
+            style="margin: 32px 0 64px"
+            form="qf"
+          />
+        </section>
+      </form>
+    </div>
+    <div class="button-right">
+      <div>
+        <h4 class="settings">{% trans "Настройки" %}</h4>
+      </div>
+      <div>
+        <button class="btn w-100" style="height: 44px; padding: 0px" onclick="window.location.href='{% url 'users:profile_edit' user.id %}'">
+          <span
+            class="d-flex justify-content-start"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--gray-900);
+              text-decoration: none;
+            "
+          >
+            {% trans "Личные данные" %}
+        </span>
+        </button>
+      </div>
+      <div>
+        <button class="btn w-100" style="height: 44px; padding: 0px" onclick="window.location.href='{% url 'users:questionnaire_edit' user.id %}'">
+          <span
+            class="d-flex justify-content-start"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--gray-900);
+              text-decoration: none;
+            "
+          >
+            {% trans "Анкета" %}
+        </span>
+        </button> 
+      </div>
+      <div>
+        <button
+          type="button"
+          class="btn w-100"
+          style="height: 44px; padding: 0px"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <span
+            class="d-flex justify-content-start"
+            href="#"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--danger-color);
+            "
+          >
+            {% trans "Выйти" %}
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered exit-profile">
+    <div class="modal-content" style="border-radius: 16px">
+      <div class="modal-header" style="border-bottom: none">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          style="width: 25px"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+          <h2>{% trans "Предупреждение" %}</h2>
+        </div>
+        <div>
+          <p class="body-text">{% trans "Вы уверены, что хотите выйти?" %}</p>
+        </div>
+      </div>
+      <div class="text-center mb-5 d-block bt-none mt-2">
+        <a href="{% url 'users:logout' %}">
+          <button type="button" class="btn btn-danger me-3">
+            <span class="body-text"> {% trans "Выйти" %} </span>
+          </button></a>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+        >
+          <span class="body-text">{% trans "Назад" %}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+  <div
+    class="modal fade"
+    id="Interests_modal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    data-bs-keyboard="false"
+    data-bs-backdrop="static"
+  >
+    <div style="max-width: 856px" class="modal-dialog modal-dialog-centered">
+      <div class="modal-content" style="border-radius: 16px">
+        <div class="modal-body text-center mt-5">
+          <div>
+            <h2>{% trans "Расскажи, чем ты интересуешься" %}</h2>
+          </div>
+          <div class="text-interests mx-auto">
+            <span class="body-text" style="color: var(--body-color)">
+              {% blocktrans %} Это поможет нам подобрать подходящие анкеты и заодно заполнить
+              твой профиль. Выбери хотя бы 3 интереса {% endblocktrans %}
+            </span>
+          </div>
+        </div>
+        <form method="post">
+          {% csrf_token %}
+        <div class="d-grid grid-interests">
+  <div class="d-flex flex-wrap grid-interests2">
+<!--    {% for choice in hf.hobby.field.choices %}-->
+<!--    <label class="checkbox-btn {% if LANGUAGE_CODE == 'en' %} {{ choice.1 }} {% else %} {{ choice.0 }} {% endif %}">-->
+<!--        <input type="checkbox" name="{{ hf.hobby.name }}" value="{{ choice.id }}" {% if choice.0|stringformat:"s" in form.hobby.value %}checked{% endif %} />-->
+<!--        <span class="label"> {% if LANGUAGE_CODE == 'en' %} {{ choice.1 }} {% else %} {{ choice.0 }} {% endif %}</span>-->
+<!--    </label>-->
+<!--{% endfor %}-->
+<!--    {% for hobby_item in hf.hobby.field.queryset %}-->
+<!--    <label class="checkbox-btn">-->
+<!--        <input type="checkbox" name="{{ hf.hobby.name }}" value="{{ hobby_item.value }}" {% if hobby_item.selected %}checked{% endif %} />-->
+<!--        <span class="label">-->
+<!--            {% if LANGUAGE_CODE == 'en' %}-->
+<!--                {{ hobby_item.title_en }}-->
+<!--            {% else %}-->
+<!--                {{ hobby_item.title_ru }}-->
+<!--            {% endif %}-->
+<!--        </span>-->
+<!--    </label>-->
+<!--{% endfor %}-->
+    {% for value in hf.hobby.field.queryset %}
+    <label class="checkbox-btn">
+        <input type="checkbox" name="{{ hf.hobby.name }}" value="{{ value.id }}" {% if value.0|stringformat:"s" in hf.hobby.value %}checked{% endif %} />
+        <span class="label">
+            {% if LANGUAGE_CODE == 'en' %}
+                {{ value.title_en }}
+            {% else %}
+                {{ value.title_ru }}
+            {% endif %}
+        </span>
+    </label>
+{% endfor %}
+
+  </div>
+</div>
+
+           <div
+          class="text-center modal-footer mb-5 mt-2"
+          style="display: block; border-top: none"
+        >
+          <button
+            id="buttonbox"
+            type="submit"
+            class="btn btn-secondary disabled"
+            style="width: 303px"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            onClick="checkboxes()"
+          >
+            <span class="body-text">{% trans "Готово" %}</span>
+          </button>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const button = document.getElementById("buttonbox");
+
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", updateButtonClass);
+    });
+
+    function updateButtonClass() {
+      const checkedCheckboxes = Array.from(checkboxes).filter(
+        (checkbox) => checkbox.checked
+      );
+
+      if (checkedCheckboxes.length < 3) {
+        button.classList.remove("abled");
+        button.classList.add("disabled");
+        button.classList.remove("btn-primary");
+        button.classList.add("btn-secondary");
+
+      } else {
+        button.classList.remove("disabled");
+        button.classList.add("abled");
+        button.classList.remove("btn-secondary");
+        button.classList.add("btn-primary");
+
+      }
+    }
+  </script>
+{% if not user.hobby.all %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var myModal = new bootstrap.Modal(
+        document.getElementById("Interests_modal")
+      );
+      myModal.show();
+    });
+  </script>
+{% endif %}
+{% endblock %}
