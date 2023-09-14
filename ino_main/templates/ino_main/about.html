@@ -1,6 +1,13 @@
 {% extends 'users/base.html' %} {% load static %} {% load i18n %} {% block content %}
 
 <style>
+  .button-down {
+    object-fit: cover;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
     .form-control,
     #btn_feed {
       width: 85%;
@@ -322,9 +329,9 @@
           {% trans "новых друзей со схожими интересами" %}
         </p>
         <div class="text-center" style="padding-top: 28px">
-          <a href="#how_it_work"
+          <button class="button-down" onclick="document.location='#how_it_work'"
             ><img class="arrow" src="{% static 'vendor/img/arrow-down.svg' %}" alt="" style="width: 86px"
-          /></a>
+          /></button>
         </div>
       </div>
       <div>

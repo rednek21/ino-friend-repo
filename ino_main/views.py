@@ -2,7 +2,7 @@ import uuid
 
 from django.conf import settings
 from django.core.mail import send_mail
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
 from django.views.generic import FormView, TemplateView
 
@@ -10,6 +10,7 @@ from common.views import CommonContextMixin
 
 from ino_main.forms import FeedBackForm
 from ino_main.models import FeedBack
+from users.models import User
 
 
 class AboutView(CommonContextMixin, FormView):
@@ -23,17 +24,18 @@ class AboutView(CommonContextMixin, FormView):
         email = form.cleaned_data['email']
         message = form.cleaned_data['message']
 
-        feedback = FeedBack(code=uuid.uuid4(), name=name, email=email, message=message)
-        feedback.save()
+        if User.objects.filter(email=email).exists():
+            feedback = FeedBack(code=uuid.uuid4(), name=name, email=email, message=message)
+            feedback.save()
 
-        # Отправка письма
-        send_mail(
-            subject='Feedback',
-            message=f'Name: {name}\nEmail: {email}\nMessage: {message}',
-            from_email=settings.EMAIL_HOST_USER,
-            recipient_list=[settings.EMAIL_HOST_USER],
-            fail_silently=False,
-        )
+            # Отправка письма
+            send_mail(
+                subject='Feedback',
+                message=f'Name: {name}\nEmail: {email}\nMessage: {message}',
+                from_email=settings.EMAIL_HOST_USER,
+                recipient_list=[settings.EMAIL_HOST_USER],
+                fail_silently=False,
+            )
         return super().form_valid(form)
 
 
