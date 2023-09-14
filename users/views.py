@@ -179,11 +179,12 @@ class UserProfileEditView(LoginRequiredMixin, CommonContextMixin, UpdateView):
         image = self.request.FILES.get('image')
         if image:
             if image.size <= 5 * 1024 * 1024:
-                user.image = image
+                # user.image = image
                 user.save()
             else:
                 return self.form_invalid(form)
         else:
+            image = None
             user.save()
         return super().form_valid(form)
 

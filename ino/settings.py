@@ -61,11 +61,13 @@ INSTALLED_APPS = [
     'crispy_forms',
     'django_extensions',
     'cities',
-    'django_cleanup',
+    # 'django_cleanup',
 
     'ino_main',
     'users',
     # 'smart_selects'
+
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 CITIES_FILES = {

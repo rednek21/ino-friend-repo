@@ -131,7 +131,7 @@
               </button>
             </div>
             <form
-              class="d-flex flex-wrap flex-sm-col flex-md-row align-items-center gap-4" id="some-form" method="get" action="{% url 'users:profiles' %}"
+              class="d-flex flex-wrap flex-sm-col flex-md-row align-items-center gap-4" id="filter-form" method="get" action="{% url 'users:profiles' %}"
             >
                 {% csrf_token %}
                 <div class="visibleDiv interests hidden_el_mob flex-grow-1">
@@ -332,19 +332,20 @@
       </div>
       {% if page_obj.paginator.num_pages > 1 %}
       <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          {% if page_obj.has_previous %}
-          <li class="page-item"><a class="page-link"style="margin-right:3px;" href="?page={{ page_obj.previous_page_number }}"><img src="{% static 'vendor/img/arrow-prev-small-svgrepo-com.svg' %}" alt=""></a></li>
-          {% endif %}
-          <span class="page-item body-text">
-            {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
-          </span>
-          {% if page_obj.has_next %}
-          <li class="page-item"><a class="page-link" style="margin-left:3px; " href="?page={{ page_obj.next_page_number }}"><img src="{% static 'vendor/img/arrow-next-small-svgrepo-com.svg' %}"></a></li>
-          {% endif %}
-        </ul>
-      </nav>
-    {% endif %}
+          <ul class="pagination">
+            {% if page_obj.has_previous %}
+            <li class="page-item"><a class="page-link" style="margin-right:3px;" href="?page={{ page_obj.previous_page_number }}{% if request.GET.hobby %}&hobby={{ request.GET.hobby }}{% endif %}{% if request.GET.preferred_language %}&preferred_language={{ request.GET.preferred_language }}{% endif %}{% if request.GET.gender %}&gender={{ request.GET.gender }}{% endif %}{% if request.GET.university %}&university={{ request.GET.university }}{% endif %}"><img src="{% static 'vendor/img/arrow-prev-small-svgrepo-com.svg' %}" alt=""></a></li>
+            {% endif %}
+            <span class="page-item body-text">
+              {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" style="margin-left:3px; " href="?page={{ page_obj.next_page_number }}{% if request.GET.hobby %}&hobby={{ request.GET.hobby }}{% endif %}{% if request.GET.preferred_language %}&preferred_language={{ request.GET.preferred_language }}{% endif %}{% if request.GET.gender %}&gender={{ request.GET.gender }}{% endif %}{% if request.GET.university %}&university={{ request.GET.university }}{% endif %}"><img src="{% static 'vendor/img/arrow-next-small-svgrepo-com.svg' %}"></a></li>
+            {% endif %}
+          </ul>
+        </nav>
+        {% endif %}
+
     </div>
     {% endif %}
     <!-- Верхний закоменченный div нужно показывать, когда пользователь выполнил все условия, иначе нижний div -->
