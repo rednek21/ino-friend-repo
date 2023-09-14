@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 14:10+0000\n"
+"POT-Creation-Date: 2023-09-14 08:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,17 +18,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ino/settings.py:179
+#: ino/settings.py:181
 #: venv/lib/python3.10/site-packages/django_languages/languages.py:145
 msgid "Russian"
 msgstr ""
 
-#: ino/settings.py:180
+#: ino/settings.py:182
 #: venv/lib/python3.10/site-packages/django_languages/languages.py:42
 msgid "English"
 msgstr ""
 
-#: ino_main/templates/ino_main/about.html:268
+#: ino_main/templates/ino_main/about.html:275
 #: ino_main/templates/ino_main/cookies.html:79
 #: ino_main/templates/ino_main/error400.html:56
 #: ino_main/templates/ino_main/error403.html:56
@@ -44,8 +44,8 @@ msgstr ""
 msgid "Анкеты"
 msgstr "Profiles"
 
-#: ino_main/templates/ino_main/about.html:272
-#: ino_main/templates/ino_main/about.html:276
+#: ino_main/templates/ino_main/about.html:279
+#: ino_main/templates/ino_main/about.html:283
 #: ino_main/templates/ino_main/cookies.html:83
 #: ino_main/templates/ino_main/cookies.html:87
 #: ino_main/templates/ino_main/error400.html:60
@@ -68,7 +68,7 @@ msgstr "Profiles"
 msgid "Профиль"
 msgstr "Profile"
 
-#: ino_main/templates/ino_main/about.html:280
+#: ino_main/templates/ino_main/about.html:287
 #: ino_main/templates/ino_main/cookies.html:91
 #: ino_main/templates/ino_main/error400.html:68
 #: ino_main/templates/ino_main/error403.html:68
@@ -84,91 +84,91 @@ msgstr "Profile"
 msgid "О проекте"
 msgstr "About Project"
 
-#: ino_main/templates/ino_main/about.html:317
+#: ino_main/templates/ino_main/about.html:324
 msgid "Добро пожаловать!"
 msgstr "Welcome!"
 
-#: ino_main/templates/ino_main/about.html:319
+#: ino_main/templates/ino_main/about.html:326
 msgid "Ino — это проект, который помогает искать"
 msgstr "Ino - is a project which helps you find"
 
-#: ino_main/templates/ino_main/about.html:320
+#: ino_main/templates/ino_main/about.html:327
 msgid "друзей в своём вузе для практики иностранных"
 msgstr "friends in your university for practicing foreign"
 
-#: ino_main/templates/ino_main/about.html:320
+#: ino_main/templates/ino_main/about.html:327
 msgid "языков. Ты можешь"
 msgstr "languages. You can"
 
-#: ino_main/templates/ino_main/about.html:321
+#: ino_main/templates/ino_main/about.html:328
 msgid "оставить анкету и найти"
 msgstr "you can create a profile and find"
 
-#: ino_main/templates/ino_main/about.html:322
+#: ino_main/templates/ino_main/about.html:329
 msgid "новых друзей со схожими интересами"
 msgstr "new friends with similar interests"
 
-#: ino_main/templates/ino_main/about.html:336
+#: ino_main/templates/ino_main/about.html:343
 msgid "Как это работает?"
 msgstr "How does it work?"
 
-#: ino_main/templates/ino_main/about.html:341
+#: ino_main/templates/ino_main/about.html:348
 msgid "Заполни анкету"
 msgstr "Fill the questionnaire"
 
-#: ino_main/templates/ino_main/about.html:343
+#: ino_main/templates/ino_main/about.html:350
 msgid "Зарегистрируйся и заполни"
 msgstr "Register and complete"
 
-#: ino_main/templates/ino_main/about.html:344
+#: ino_main/templates/ino_main/about.html:351
 msgid "анкету, чтобы другие люди"
 msgstr "your profile, so that other people"
 
-#: ino_main/templates/ino_main/about.html:345
+#: ino_main/templates/ino_main/about.html:352
 msgid "могли узнать о тебе"
 msgstr "can know about you"
 
-#: ino_main/templates/ino_main/about.html:350
+#: ino_main/templates/ino_main/about.html:357
 msgid "Найди собеседника"
 msgstr "Find a friend"
 
-#: ino_main/templates/ino_main/about.html:352
+#: ino_main/templates/ino_main/about.html:359
 msgid "Выбери из предложенных или"
 msgstr "Choose from the suggestions or"
 
-#: ino_main/templates/ino_main/about.html:353
+#: ino_main/templates/ino_main/about.html:360
 msgid "найди анкету используя"
 msgstr "find a profile using"
 
-#: ino_main/templates/ino_main/about.html:354
+#: ino_main/templates/ino_main/about.html:361
 msgid "фильтры"
 msgstr "the filters"
 
-#: ino_main/templates/ino_main/about.html:359
+#: ino_main/templates/ino_main/about.html:366
 msgid "Пиши и общайся"
 msgstr "Text and chat"
 
-#: ino_main/templates/ino_main/about.html:361
+#: ino_main/templates/ino_main/about.html:368
 msgid "Общайтесь онлайн или"
 msgstr "Talk online or"
 
-#: ino_main/templates/ino_main/about.html:361
+#: ino_main/templates/ino_main/about.html:368
 msgid "назначьте встречу"
 msgstr "plan a meetup"
 
-#: ino_main/templates/ino_main/about.html:362
+#: ino_main/templates/ino_main/about.html:369
 msgid "и проводите время вместе"
 msgstr "and spend time together"
 
-#: ino_main/templates/ino_main/about.html:387
+#: ino_main/templates/ino_main/about.html:394
 msgid "Часто задаваемые вопросы"
 msgstr "Frequently asked questions"
 
-#: ino_main/templates/ino_main/about.html:400
+#: ino_main/templates/ino_main/about.html:407
 msgid "Как создать анкету?"
 msgstr "How to create a profile?"
 
-#: ino_main/templates/ino_main/about.html:411
+#: ino_main/templates/ino_main/about.html:418
 msgid ""
 "Перейди во вкладку \"Профиль\", заполни обязательные строчки анкеты\n"
 "                и добавь фотографию. Все\n"
@@ -178,11 +178,11 @@ msgstr ""
 "                and add a photo. That's all\n"
 "                Simple!"
 
-#: ino_main/templates/ino_main/about.html:428
+#: ino_main/templates/ino_main/about.html:435
 msgid "Как написать другому пользователю?"
 msgstr "How to text another user?"
 
-#: ino_main/templates/ino_main/about.html:439
+#: ino_main/templates/ino_main/about.html:446
 msgid ""
 "Перейди во вкладку \"Анкеты\", выбери понравившуюся тебе анкету и\n"
 "                кликай по кнопке “Написать”, ты перейдешь в Телеграм. "
@@ -194,11 +194,11 @@ msgstr ""
 "Done!\n"
 "                Discuss about meeting and get to know each other better."
 
-#: ino_main/templates/ino_main/about.html:456
+#: ino_main/templates/ino_main/about.html:463
 msgid "Я боюсь написать первым(-ой)"
 msgstr "I am afraid to text first"
 
-#: ino_main/templates/ino_main/about.html:467
+#: ino_main/templates/ino_main/about.html:474
 msgid ""
 "Попробуй отказаться от максимализма и ожидания, что каждое\n"
 "                знакомство перерастет в супер общение. Иногда знакомство - "
@@ -220,83 +220,83 @@ msgstr ""
 "afraid. Try to be\n"
 "open!"
 
-#: ino_main/templates/ino_main/about.html:482
+#: ino_main/templates/ino_main/about.html:489
 msgid "Команда проекта"
 msgstr "Project Team"
 
-#: ino_main/templates/ino_main/about.html:490
+#: ino_main/templates/ino_main/about.html:497
 msgid "Сергей Мицкевич"
 msgstr "Sergey Mitskevich"
 
-#: ino_main/templates/ino_main/about.html:492
+#: ino_main/templates/ino_main/about.html:499
 msgid "Создатель"
 msgstr "Creator"
 
-#: ino_main/templates/ino_main/about.html:497
+#: ino_main/templates/ino_main/about.html:504
 msgid "Георгий Костанди"
 msgstr "Georgy Kostandi"
 
-#: ino_main/templates/ino_main/about.html:499
+#: ino_main/templates/ino_main/about.html:506
 msgid "Frontend-Разработчик"
 msgstr "Frontend-Developer"
 
-#: ino_main/templates/ino_main/about.html:505
+#: ino_main/templates/ino_main/about.html:512
 msgid "Егор Подустов"
 msgstr "Egor Podustov"
 
-#: ino_main/templates/ino_main/about.html:506
+#: ino_main/templates/ino_main/about.html:513
 msgid "Backend-разработчик"
 msgstr "Backend-Developer"
 
-#: ino_main/templates/ino_main/about.html:512
+#: ino_main/templates/ino_main/about.html:519
 msgid "Виктория"
 msgstr "Victoria"
 
-#: ino_main/templates/ino_main/about.html:513
+#: ino_main/templates/ino_main/about.html:520
 msgid "Бурнашева"
 msgstr "Burnasheva"
 
-#: ino_main/templates/ino_main/about.html:515
+#: ino_main/templates/ino_main/about.html:522
 msgid "UX/UI дизайнер"
 msgstr "UX/UI Designer"
 
-#: ino_main/templates/ino_main/about.html:527
+#: ino_main/templates/ino_main/about.html:534
 msgid "Мы рады обратной связи"
 msgstr "We are happy for any feedback"
 
-#: ino_main/templates/ino_main/about.html:529
+#: ino_main/templates/ino_main/about.html:536
 msgid "Можешь написать, что бы тебе хотелось увидеть на"
 msgstr "You can write us whatever you would like to see on"
 
-#: ino_main/templates/ino_main/about.html:530
+#: ino_main/templates/ino_main/about.html:537
 msgid "сайте в будущем или что исправить. Мы готовы"
 msgstr "the website in the future or to fix something. We are ready"
 
-#: ino_main/templates/ino_main/about.html:530
+#: ino_main/templates/ino_main/about.html:537
 msgid "услышать тебя и"
 msgstr "for your feedback and"
 
-#: ino_main/templates/ino_main/about.html:531
+#: ino_main/templates/ino_main/about.html:538
 msgid "будем рады меняться к лучшему!"
 msgstr "will be happy to make changes for the better!"
 
-#: ino_main/templates/ino_main/about.html:555
+#: ino_main/templates/ino_main/about.html:562
 msgid "Почта"
 msgstr "Email"
 
-#: ino_main/templates/ino_main/about.html:565
+#: ino_main/templates/ino_main/about.html:572
 msgid "Пожелания/жалобы"
 msgstr "Wishes/Complaints"
 
-#: ino_main/templates/ino_main/about.html:575
+#: ino_main/templates/ino_main/about.html:582
 msgid "Отправить"
 msgstr "Send"
 
-#: ino_main/templates/ino_main/about.html:578
+#: ino_main/templates/ino_main/about.html:585
 msgid "Нажимая на кнопку, я соглашаюсь на"
 msgstr "By clicking on the button, I agree to"
 
-#: ino_main/templates/ino_main/about.html:579
+#: ino_main/templates/ino_main/about.html:586
 msgid "обработку персональных данных"
 msgstr "the processing of personal data"
 
@@ -1786,7 +1786,7 @@ msgid "Университет"
 msgstr "University"
 
 #: users/templates/users/all_profiles.html:222
-#: users/templates/users/all_profiles.html:373
+#: users/templates/users/all_profiles.html:374
 msgid "Все фильтры"
 msgstr "All filters"
 
@@ -1804,12 +1804,12 @@ msgstr "Nothing found"
 msgid "Телеграм"
 msgstr "Telegram"
 
-#: users/templates/users/all_profiles.html:369
-#: users/templates/users/all_profiles.html:371
+#: users/templates/users/all_profiles.html:370
+#: users/templates/users/all_profiles.html:372
 msgid "Скрыть фильтры"
 msgstr "Hide filters"
 
-#: users/templates/users/all_profiles.html:376
+#: users/templates/users/all_profiles.html:377
 msgid "Фильтры"
 msgstr "The filters"
 
@@ -1876,13 +1876,23 @@ msgstr "An email has been sent to the specified email address"
 msgid "письмо для создания нового пароля."
 msgstr "to create a new password."
 
-#: users/templates/users/password_reset_confirm.html:46
-msgid "введите его ниже."
-msgstr "Enter it below"
-
+#: users/templates/users/password_reset_confirm.html:43
 #: users/templates/users/password_reset_confirm.html:51
 msgid "Новый пароль"
 msgstr "New password"
+
+#: users/templates/users/password_reset_confirm.html:45
+msgid "Придумайте новый пароль и дважды"
+msgstr "Create a new password and"
+
+#: users/templates/users/password_reset_confirm.html:46
+msgid "введите его ниже."
+msgstr "enter it twice below"
+
+#: users/templates/users/password_reset_confirm.html:67
+#: users/templates/users/registration.html:88
+msgid "Повторите пароль"
+msgstr "Repeat your password"
 
 #: users/templates/users/password_reset_confirm.html:87
 msgid "Установить пароль"
@@ -2114,10 +2124,6 @@ msgstr "Registration"
 #: users/templates/users/registration.html:54
 msgid "Начни свое путешествие!"
 msgstr "Start your journey!"
-
-#: users/templates/users/registration.html:88
-msgid "Повторите пароль"
-msgstr "Repeat your password"
 
 #: users/templates/users/registration.html:112
 msgid "Уже есть аккаунт?"
@@ -35043,7 +35049,6 @@ msgstr ""
 #: venv/lib/python3.10/site-packages/modeltranslation/widgets.py:24
 msgid "None"
 msgstr ""
-
 
 #~ msgid ""
 #~ "Мы используем файлы cookies для улучшения работы сайта. Оставаясь на "
