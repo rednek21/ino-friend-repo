@@ -1,0 +1,391 @@
+{% extends 'users/base.html' %} {% load static %} {% load i18n %}
+ {% block content %}
+<style>
+  @media handheld, screen and (max-width:994px) {
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
+    .lead-text {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      text-align: center;
+    }
+    .none-search{
+    display: block;
+    align-items:center;
+    justify-content: center;
+    padding-top: 125px;
+  }
+  }
+</style>
+<body>
+  <nav class="navbar navbar-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">
+        <img class="logo_white" src="{% static 'vendor/img/logo-white.svg' %}" alt="Logo" />
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        style="border: none; margin-right: -3%"
+      >
+        <span
+          ><img src="{% static 'vendor/img/hamburger-md-svgrepo-com.svg' %}" style="width: 30px" alt=""
+        /></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="navbarNav"
+        aria-labelledby="navbarNavLabel"
+      >
+        <div class="offcanvas-header">
+          <div class="navbar-brand">
+            <img class="logo" src="{% static 'vendor/img/Logo-blue.svg' %}" alt="" />
+          </div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'users:profiles' %}">{% trans "Анкеты" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'users:profile' user.id %}">{% trans "Профиль" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'ino_main:about' %}">{% trans "О проекте" %}</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                  <form id="language-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select id="language-select" name="language" onchange="changeLanguage()"
+                    class="lang-navbar">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go" style="display: none;">
+</form>
+
+<script>
+    const languageSelect = document.getElementById('language-select');
+    const languageForm = document.getElementById('language-form');
+
+    languageSelect.addEventListener('change', () => {
+        languageForm.submit();
+    });
+</script>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main>
+    {% if conditions %}
+      <div class="pid">
+          <div class="text">
+              <h1>{% trans "Упс, кажется ты что-то забыл" %}...</h1>
+              <p class="lead-text">
+                  {% blocktrans %}Для доступа к анкетам друзей ты должен<br />
+                  заполнить обязательные поля профиля, анкеты<br />
+                  и подтвердить почту!{% endblocktrans %}
+<!--                  {{ conditions }}-->
+              </p>
+          </div>
+          <div class="pid2">
+              <img class="error_image" src="{% static 'vendor/img/error.svg' %}" alt="" />
+          </div>
+      </div>
+    {% else %}
+    <div class="container">
+      <div class="wrapper-profiles mx-sm-0 mx-md-auto mx-lg-auto">
+        <div class="search">
+          <h2>{% trans "Найти собеседника" %}</h2>
+          <div class="filter col-8">
+            <div
+              class="visibleDiv hidden_el_mob d-sm-block d-md-none filter_btn_group mb-4"
+              id="clear"
+            >
+              <button class="reset" type="reset" from="some-form" id="reset-filter">
+                {% trans "Очистить" %}
+              </button>
+            </div>
+            <form
+              class="d-flex flex-wrap flex-sm-col flex-md-row align-items-center gap-4" id="filter-form" method="get" action="{% url 'users:profiles' %}"
+            >
+                {% csrf_token %}
+                <div class="visibleDiv interests hidden_el_mob flex-grow-1">
+                  <select
+                    class="form-select select-lst form-select-lg"
+                    id="hobby"
+                    aria-label=".form-select-lg"
+                    name="hobby"
+                  >
+                    <option value="" selected disabled>{% trans 'Интересы' %}</option>
+                    {% for choice in form.hobby.field.choices %}
+                      {% if LANGUAGE_CODE == 'en' %}
+                      <option value="{{ choice.2 }}"> {{ choice.2 }} </option>
+                      {% else %}
+                      <option value="{{ choice.1 }}"> {{ choice.1 }} </option>
+                      {% endif %}
+                    {% endfor %}
+                  </select>
+                </div>
+                <div class="visibleDiv language hidden_el_mob flex-grow-1">
+                <select
+                  class="form-select select-lst form-select-lg"
+                  id="language"
+                  aria-label=".form-select-lg"
+                  name="preferred_language">
+                >
+                  <option value="" selected disabled>{% trans 'Изучаемый язык' %}</option>
+                  {% for lang in form.preferred_language.field.choices %}
+                      <option value="{{ lang.0 }}">{{ lang.1 }}</option>
+                  {% endfor %}
+                </select>
+                 </div>
+                <div class="filterDiv hidden_el sex flex-grow-1">
+                <select
+                  class="form-select select-lst form-select-lg"
+                  id="sex"
+                  aria-label=".form-select-lg"
+                  name="gender"
+                >
+                  <option value="" selected disabled>{% trans 'Пол' %}</option>
+                  {% for gender in form.gender.field.choices %}
+                    <option value="{{gender.0}}">{% trans gender.1 %}</option>
+                  {% endfor %}
+                </select>
+                </div>
+               <div class="filterDiv hidden_el city flex-grow-1">
+                <select
+                  class="form-select select-lst form-select-lg"
+                  id="city"
+                  aria-label=".form-select-lg"
+                  name="residence_city"
+                >
+                  <option value="" selected disabled>{% trans 'Город' %}</option>
+                  {% for city in form.residence_city.field.choices %}
+                    <option value="{{city.0}}">{% trans city.1 %}</option>
+                  {% endfor %}
+                </select>
+               </div>
+                <div class="filterDiv hidden_el vuz flex-grow-1">
+                <select
+                  class="form-select select-lst form-select-lg"
+                  id="vuz"
+                  aria-label=".form-select-lg"
+                  name="university"
+                >
+                  <option value="" selected disabled>{% trans 'Университет' %}</option>
+                  {% for university in form.university.field.choices %}
+                    <option value="{{university.0}}">{% trans university.1 %}</option>
+                  {% endfor %}
+                </select>
+               </div>
+
+                <div class="d-flex filter_btn_group gap-4">
+                <button id="filter_btn" type="button">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22 3H2L10 12.46V19L14 21V12.46L22 3Z"
+                      stroke="#0029FF"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <span id="filter_btn_text">{% trans "Все фильтры" %}</span>
+                </button>
+                <button id="button-search" type="submit">{% trans "Искать" %}</button>
+               </div>
+            </form>
+            </div>
+          </div>
+        </div>
+        <!-- Элемент ниже нужно показывать, если анкеты не найдены -->
+        {% if users.count == 0 %}
+         <div class="none-search">
+          <div class="text" style="color: var(--grey-900)">
+              <h1>{% trans "Ничего не найдено" %}...</h1>
+          </div>
+          <div class="pid2">
+              <svg xmlns="http://www.w3.org/2000/svg"   x="0px" y="0px" width="100" height="100" viewBox="0 0 128 128">
+                <path d="M 52.349609 14.400391 C 42.624609 14.400391 32.9 18.1 25.5 25.5 C 10.7 40.3 10.7 64.399219 25.5 79.199219 C 32.9 86.599219 42.600391 90.300781 52.400391 90.300781 C 62.200391 90.300781 71.900781 86.599219 79.300781 79.199219 C 94.000781 64.399219 93.999219 40.3 79.199219 25.5 C 71.799219 18.1 62.074609 14.400391 52.349609 14.400391 z M 52.300781 20.300781 C 60.500781 20.300781 68.700391 23.399219 74.900391 29.699219 C 87.400391 42.199219 87.4 62.5 75 75 C 62.5 87.5 42.199219 87.5 29.699219 75 C 17.199219 62.5 17.199219 42.199219 29.699219 29.699219 C 35.899219 23.499219 44.100781 20.300781 52.300781 20.300781 z M 52.300781 26.300781 C 45.400781 26.300781 38.9 29 34 34 C 29.3 38.7 26.700391 44.800391 26.400391 51.400391 C 26.300391 53.100391 27.600781 54.4 29.300781 54.5 L 29.400391 54.5 C 31.000391 54.5 32.300391 53.199609 32.400391 51.599609 C 32.600391 46.499609 34.699219 41.799219 38.199219 38.199219 C 41.999219 34.399219 47.000781 32.300781 52.300781 32.300781 C 54.000781 32.300781 55.300781 31.000781 55.300781 29.300781 C 55.300781 27.600781 54.000781 26.300781 52.300781 26.300781 z M 35 64 A 3 3 0 0 0 32 67 A 3 3 0 0 0 35 70 A 3 3 0 0 0 38 67 A 3 3 0 0 0 35 64 z M 83.363281 80.5 C 82.600781 80.5 81.850781 80.800391 81.300781 81.400391 C 80.100781 82.600391 80.100781 84.499609 81.300781 85.599609 L 83.800781 88.099609 C 83.200781 89.299609 82.900391 90.6 82.900391 92 C 82.900391 94.4 83.8 96.700391 85.5 98.400391 L 98.300781 111 C 100.10078 112.8 102.39922 113.69922 104.69922 113.69922 C 106.99922 113.69922 109.29961 112.79961 111.09961 111.09961 C 114.59961 107.59961 114.59961 101.90039 111.09961 98.400391 L 98.300781 85.599609 C 96.600781 83.899609 94.300391 83 91.900391 83 C 90.500391 83 89.2 83.300391 88 83.900391 L 85.5 81.400391 C 84.9 80.800391 84.125781 80.5 83.363281 80.5 z M 91.900391 88.900391 C 92.700391 88.900391 93.5 89.200781 94 89.800781 L 106.69922 102.5 C 107.89922 103.7 107.89922 105.59922 106.69922 106.69922 C 105.49922 107.89922 103.6 107.89922 102.5 106.69922 L 89.800781 94.099609 C 89.200781 93.499609 88.900391 92.700391 88.900391 91.900391 C 88.900391 91.100391 89.200781 90.300781 89.800781 89.800781 C 90.400781 89.200781 91.100391 88.900391 91.900391 88.900391 z"></path>
+            </svg>
+          </div>
+        </div>
+        {% else %}
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+          {% for customer in users %}
+          <div class="col">
+            <a
+              class="card overflow-hidden gap-4 flex-sm-col flex-md-col flex-lg-row"
+              href="{% if user == customer %} {% url 'users:profile' user.id %} {% else %} {% url 'users:profile_view' customer.id %} {% endif %}"
+              target="_blank"
+            >
+              <div class="card-img">
+                <img class="photo-user" src="{% if customer.image %} {{ customer.image.url }}
+            {% else %} {% static 'vendor/img/User-profile.svg' %} {% endif %}" alt="" />
+              </div>
+              <div
+                class="col card-text d-flex flex-column position-static justify-content-between"
+              >
+                <div class="d-flex flex-column justify-content-start">
+                  <div class="d-flex flex-row mb-2 gap-2 flex-wrap">
+                    {% for hobby in customer.hobby.all|slice:":3" %}
+                      <span class="label">{{ hobby.title }}</span>
+                    {% endfor %}
+                  </div>
+                  <h6 class="mb-2">{{customer.first_name}} {{customer.last_name}},
+                      {% if LANGUAGE_CODE == 'en' %}
+                {{ customer.get_user_age_en }}
+                {% else %}
+                {{ customer.get_user_age_ru }}
+                {% endif %}
+                  </h6>
+                  <div class="study d-flex flex-row mb-2">
+                    <svg
+                      class="me-2"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      preserveAspectRatio="xMidYMid meet"
+                    >
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M1.47826 9.50422L12.4783 4L23 9.50422L17.7391 12.2563M1.47826 9.50422L6.97826 12.2563M1.47826 9.50422H12.4783M1.47826 9.50422V15.0084M6.97826 12.2563L12.4783 15.0084L17.7391 12.2563M6.97826 12.2563V18.0107C11.3783 21.6135 15.9855 19.5119 17.7391 18.0107V12.2563M1.47826 15.0084C1.31884 15.0084 1 15.3087 1 16.5096H1.47826M1.47826 15.0084C1.63768 15.0084 1.95652 15.3087 1.95652 16.5096H1.47826M1.47826 15.0084V16.5096"
+                        stroke="black"
+                        stroke-width="0.67"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <p>{{customer.university}}{% if customer.specialty %}, {{customer.specialty}}{% endif %}</p>
+                  </div>
+                  <div class="lang d-flex flex-row mb-sm-2">
+                    <svg
+                      class="me-2"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 6V14L5.8 11.2653H8H16V6C16 4.89543 15.1046 4 14 4H6C4.89543 4 4 4.89543 4 6Z"
+                        stroke="black"
+                        stroke-width="0.67"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20 12V20L18.2 17.2653H10C8.89543 17.2653 8 16.3699 8 15.2653V12C8 10.8954 8.89543 10 10 10H18C19.1046 10 20 10.8954 20 12Z"
+                        fill="#F8F9FA"
+                        stroke="black"
+                        stroke-width="0.67"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <span>{{customer.preferred_language}}</span>
+                  </div>
+                </div>
+                 <!-- <button class="tg" onclick="location.href = '{{ customer.url }}'">{% trans "Телеграм" %}</button> -->
+                  <button class="tg" onclick="redirectToURL('{{ customer.get_url }}')">{% trans "Телеграм" %}</button>
+              </div>
+            </a>
+          </div>
+          {% endfor %}
+            <script>
+                function redirectToURL(url) {
+                  window.location.href = url;
+                }
+                </script>
+        </div>
+        {% endif %}
+      </div>
+      {% if page_obj.paginator.num_pages > 1 %}
+      <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            {% if page_obj.has_previous %}
+            <li class="page-item"><a class="page-link" style="margin-right:3px;" href="?page={{ page_obj.previous_page_number }}{% if request.GET.hobby %}&hobby={{ request.GET.hobby }}{% endif %}{% if request.GET.preferred_language %}&preferred_language={{ request.GET.preferred_language }}{% endif %}{% if request.GET.gender %}&gender={{ request.GET.gender }}{% endif %}{%if request.GET.residence_city %}&residence_city={{ request.GET.residence_city }}{% endif %}{% if request.GET.university %}&university={{ request.GET.university }}{% endif %}"><img src="{% static 'vendor/img/arrow-prev-small-svgrepo-com.svg' %}" alt=""></a></li>
+            {% endif %}
+            <span class="page-item body-text">
+              {{ page_obj.number }} / {{ page_obj.paginator.num_pages }}
+            </span>
+            {% if page_obj.has_next %}
+            <li class="page-item"><a class="page-link" style="margin-left:3px; " href="?page={{ page_obj.next_page_number }}{% if request.GET.hobby %}&hobby={{ request.GET.hobby }}{% endif %}{% if request.GET.preferred_language %}&preferred_language={{ request.GET.preferred_language }}{% endif %}{% if request.GET.gender %}&gender={{ request.GET.gender }}{% endif %}{%if request.GET.residence_city %}&residence_city={{ request.GET.residence_city }}{% endif %}{% if request.GET.university %}&university={{ request.GET.university }}{% endif %}"><img src="{% static 'vendor/img/arrow-next-small-svgrepo-com.svg' %}"></a></li>
+            {% endif %}
+          </ul>
+        </nav>
+        {% endif %}
+
+    </div>
+    {% endif %}
+    <!-- Верхний закоменченный div нужно показывать, когда пользователь выполнил все условия, иначе нижний div -->
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      if (document.documentElement.clientWidth < 576) {
+        btnText.innerText = "{% trans 'Фильтры' %}";
+      }
+    });
+    let btn = document.getElementById("filter_btn");
+    let btnText = document.getElementById("filter_btn_text");
+    btn.onclick = function () {
+      document
+        .querySelectorAll(".filterDiv")
+        .forEach((c) => c.classList.toggle("hidden_el"));
+      document
+        .querySelectorAll(".visibleDiv")
+        .forEach((c) => c.classList.toggle("hidden_el_mob"));
+      if (document.documentElement.clientWidth > 576) {
+        if (btnText.innerText === "Все фильтры") {
+          btnText.innerText = "{% trans 'Скрыть фильтры' %}";
+        } else if (btnText.innerText === "All filters") {
+            btnText.innerText = "{% trans 'Скрыть фильтры' %}";
+        } else {
+          btnText.innerText = "{% trans 'Все фильтры' %}";
+        }
+      } else if (document.documentElement.clientWidth < 576) {
+        btnText.innerText = "{% trans 'Фильтры' %}";
+      }
+    };
+  </script>
+  <script>
+      var $selectbox = $("select");
+      $("#clear").on("click", ".reset", function () {
+        $selectbox.prop("selectedIndex", 0);
+      });
+  </script>
+ 
+</body>
+{% endblock %}

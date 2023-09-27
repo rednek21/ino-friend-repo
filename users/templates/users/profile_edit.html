@@ -1,0 +1,712 @@
+{% extends 'users/base.html' %} {% load static %} {% load i18n %} {% block content %}
+<style>
+  .input-file {
+    position: relative;
+    display: inline-block;
+  }
+  .exit-profile button {
+    width: 31%;
+  }
+  .exit-profile p {
+    color: var(--body-color);
+    margin: 0;
+  }
+  .input-file span {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+  }
+  .input-file input[type="file"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+  }
+  .button-right {
+    background-color: rgb(248, 248, 248);
+    border-radius: 16px;
+    height: 224px;
+    width: 416px;
+  }
+
+  /* Focus */
+  .input-file input[type="file"]:focus + span {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* Hover/active */
+  .input-file:hover span {
+    background-color: #2927b6;
+  }
+  .input-file:active span {
+    background-color: #2927b6;
+  }
+
+  /* Disabled */
+  .input-file input[type="file"]:disabled + span {
+    background-color: #eee;
+  }
+  .button {
+    text-decoration: none;
+  }
+  .button-right .btn:hover {
+    background-color: var(--gray-300);
+  }
+  .tooltip .btn:hover {
+    background-color: var(--gray-300);
+  }
+  .flex-container {
+    width: 70%;
+    justify-content: center;
+  }
+
+  .photo-button .tooltip {
+    top: 10%;
+    left: 105%;
+  }
+
+  .photo-button .tooltip::after {
+    top: 40%;
+    left: -10%;
+    transform: rotate(90deg);
+  }
+
+  /*tooltip Box*/
+  .photo-button {
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+    cursor: default;
+    width: 192px;
+    height: 192px;
+    background-color: var(--gray-500);
+    margin-top: 24px;
+  }
+
+  /*tooltip */
+  .tooltip {
+    visibility: hidden;
+    z-index: 1;
+    opacity: 1;
+
+    width: 125px;
+    height: 104px;
+    padding: 5px 0px;
+
+    color: var(--primary-white);
+
+    position: absolute;
+    top: -10%;
+    left: -25%;
+
+    border-radius: 8px;
+
+    transform: translateY(9px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2.2538793087005615px 12.396336555480957px 0px
+        rgba(59, 59, 59, 0.09),
+      0px 18px 40px 0px rgba(59, 59, 59, 0.17);
+  }
+
+  /* tooltip  after*/
+  .tooltip::after {
+    content: " ";
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    left: 40%;
+    filter: drop-shadow(0 4px 4px rgb(0 0 0 / 0.25));
+  }
+  .tooltip-text {
+    position: relative;
+    margin-left: 24px;
+  }
+  .photo-user {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .photo-button:hover .tooltip {
+    visibility: visible;
+    transform: translateY(-10px);
+    opacity: 1;
+    transition: 0.3s linear;
+    animation: odsoky 1s ease-in-out infinite alternate;
+  }
+  .wrap {
+    background-color: rgb(248, 248, 248);
+    border-radius: 16px;
+    height: 87.7%;
+    width: 636px;
+    margin-bottom: 24px;
+  }
+  .wrap-content {
+    padding: 64px 0 0 114px;
+  }
+  .form-control {
+    width: 80%;
+  }
+  .wrap-content input {
+    width: 80%;
+  }
+  .settings {
+    color: var(--gray-900);
+    padding: 32px 237px 7px 48px;
+  }
+  .wrap-content2 {
+    padding: 64px 0 0 114px;
+  }
+
+  @media handheld, screen and (max-width:991px) {
+    .arrow {
+      position: absolute;
+      left: 36px;
+      padding-top: 22px;
+    }
+    .Anketa {
+      color: var(--gray-800);
+      margin: 0;
+      font-size: 20px;
+      line-height: auto;
+      font-weight: 600;
+      margin: 24px 0 0 70px;
+    }
+    .wrap {
+      height: 76.7%;
+      width: 93.1%;
+    }
+    .button-right {
+      height: 224px;
+      width: 93.1%;
+    }
+    .wrap-content {
+      padding: 24px 0 0 24px;
+    }
+    .form-control {
+      width: 93.1%;
+    }
+    .wrap-content input {
+      width: 93.1%;
+    }
+
+    .photo-button {
+      width: 140px;
+      height: 140px;
+      margin-inline: auto;
+      margin-top: 24px;
+    }
+    .settings {
+      color: var(--gray-800);
+      margin: 0;
+      font-size: 20px;
+      line-height: auto;
+      font-weight: 600;
+    }
+    .button-right {
+      margin-bottom: 30px;
+    }
+    .tooltip {
+      width: 110px;
+      height: 104px;
+    }
+    .tooltip-text {
+      margin-left: 20px;
+    }
+    .wrap-content2 {
+      padding: 0;
+    }
+    .body-text {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+    h2 {
+      color: #152536;
+      font-size: 24px;
+      line-height: auto;
+      font-weight: 600;
+    }
+  }
+</style>
+<body>
+<nav class="navbar navbar-dark navbar-expand-lg">
+  <div class="container-fluid">
+    <div class="navbar-brand" href="#">
+      <img class="logo_white" src="{% static 'vendor/img/logo-white.svg' %}" alt="Logo" />
+    </div>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      style="border: none; margin-right: -3%"
+    >
+      <span
+        ><img src="{% static 'vendor/img/hamburger-md-svgrepo-com.svg' %}" style="width: 30px" alt=""
+      /></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="navbarNav"
+      aria-labelledby="navbarNavLabel"
+    >
+      <div class="offcanvas-header">
+        <div class="navbar-brand">
+          <img class="logo" src="{% static 'vendor/img/Logo-blue.svg' %}" alt="" />
+        </div>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'users:profiles' %}">{% trans "Анкеты" %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'users:profile' user.id %}">{% trans "Профиль" %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'ino_main:about' %}">{% trans "О проекте" %}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <form id="language-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+    <input name="next" type="hidden" value="{{ redirect_to }}">
+    <select id="language-select" name="language" onchange="changeLanguage()"
+                    class="lang-navbar">
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
+        {% for language in languages %}
+            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                {{ language.name_local }}
+            </option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Go" style="display: none;">
+</form>
+
+<script>
+    const languageSelect = document.getElementById('language-select');
+    const languageForm = document.getElementById('language-form');
+
+    languageSelect.addEventListener('change', () => {
+        languageForm.submit();
+    });
+</script>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+  <div
+    class="d-flex flex-wrap justify-content-center"
+    style="gap: 16px; padding-top: 32px"
+  >
+    <div class="arrow">
+      <input
+        type="image"
+        src="{% static 'vendor/img/arrow-left.svg' %}"
+        onclick="history.back();"
+      />
+    </div>
+
+    <div class="wrap">
+      <form
+        method="post"
+        action="{% url 'users:profile_edit' user.id %}"
+        enctype="multipart/form-data"
+      >
+        {% csrf_token %}
+        <div class="wrap-content2">
+          <div>
+            <h3 class="Anketa" style="color: var(--gray-800)">{% trans "Личные данные" %}</h3>
+          </div>
+          <div class="photo-button">
+            <img
+              id=""
+              class="photo-user"
+              src="{% if user.image %} {{user.image.url}} {% else %} {% static 'vendor/img/User-profile.svg' %} {% endif %}"
+              alt=""
+            />
+            <div class="tooltip">
+              <div>
+                <button
+                  type="button"
+                  class="btn w-100"
+                  style="height: 44px; padding: 0px"
+                  data-bs-toggle="modal"
+                  data-bs-target="#photo-load"
+                >
+                  <span
+                    class="d-flex justify-content-start body-text tooltip-text"
+                    href="#"
+                    style="color: var(--gray-900)"
+                  >
+                    {% trans "Заменить" %}
+                  </span>
+                </button>
+              </div>
+              <div>
+                <button
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#delete_photo"
+                  value="{% trans 'Удалить фотографию' %}"
+                  class="btn w-100"
+                  style="height: 44px; padding: 0px"
+                >
+                  <span
+                    class="d-flex justify-content-start body-text tooltip-text"
+                    href="#"
+                    style="color: var(--danger-color)"
+                  >
+                    {% trans "Удалить" %}
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="wrap-content" style="padding-top: 0">
+          <div style="padding-top: 24px">
+            <label
+              for="{{ form.first_name.id_for_label }}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Имя" %}</label
+            ><span class="star"> *</span>
+            {{ form.first_name }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{ form.last_name.id_for_label }}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "Фамилия" %}</label
+            ><span class="star"> *</span>
+            {{ form.last_name }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{ form.url.id_for_label }}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% blocktrans %} Никнейм в Телеграм (пример: @username) {% endblocktrans %}</label
+            > <span class="star"> *</span>
+            {{ form.url }}
+          </div>
+          <div style="padding-top: 16px">
+            <label
+              for="{{ form.about_yourself.id_for_label }}"
+              class="form-label mini-text"
+              style="color: var(--body-color); margin: 0 0 4px 0"
+              >{% trans "O cебе" %}</label
+            >
+            {{ form.about_yourself }}
+          </div>
+
+          <div class="mb-3" style="display: none">
+            <label
+              for="{{ form.image.id_for_label }}"
+              class="form-label"
+              style="margin-bottom: -2%; margin-top: 4%; opacity: 75%"
+              >{% trans "Выберите изображение" %}</label
+            >
+            {{ form.image }}
+          </div>
+          <input
+            type="submit"
+            class="btn btn-secondary mini-text"
+            value="{% trans 'Сохранить' %}"
+            style="margin-top: 32px"
+          />
+          <input
+            type="button"
+            class="btn btn-outline-secondary mini-text"
+            data-bs-toggle="modal"
+            data-bs-target="#delete_profile"
+            value="{% trans 'Удалить профиль' %}"
+            style="margin: 16px 0 64px 0"
+          />
+        </section>
+      </form>
+    </div>
+    <div class="button-right">
+      <div>
+        <h4 class="settings">{% trans "Настройки" %}</h4>
+      </div>
+      <div>
+        <button class="btn w-100" style="height: 44px; padding: 0px" onclick="window.location.href='{% url 'users:profile_edit' user.id %}'">
+          <span
+            class="d-flex justify-content-start"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--gray-900);
+              text-decoration: none;
+            "
+          >
+            {% trans "Личные данные" %}
+        </span>
+        </button>
+      </div>
+      <div>
+        <button class="btn w-100" style="height: 44px; padding: 0px" onclick="window.location.href='{% url 'users:questionnaire_edit' user.id %}'">
+          <span
+            class="d-flex justify-content-start"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--gray-900);
+              text-decoration: none;
+            "
+          >
+            {% trans "Анкета" %}
+        </span>
+        </button>
+      </div>
+      <div>
+        <button
+          type="button"
+          class="btn w-100"
+          style="height: 44px; padding: 0px"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          <span
+            class="d-flex justify-content-start"
+            href="#"
+            style="
+              position: relative;
+              margin-left: 48px;
+              color: var(--danger-color);
+            "
+          >
+            {% trans "Выйти" %}
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered exit-profile">
+    <div class="modal-content" style="border-radius: 16px">
+      <div class="modal-header" style="border-bottom: none">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          style="width: 25px"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+          <h2>{% trans "Предупреждение" %}</h2>
+        </div>
+        <div>
+          <p class="body-text">{% trans "Вы уверены, что хотите выйти?" %}</p>
+        </div>
+      </div>
+      <div class="text-center mb-5 d-block bt-none mt-2">
+        <a href="{% url 'users:logout' %}">
+          <button type="button" class="btn btn-danger me-3">
+            <span class="body-text"> {% trans "Выйти" %} </span>
+          </button></a>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+        >
+          <span class="body-text">{% trans "Назад" %}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="delete_profile"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 16px">
+      <div class="modal-header" style="border-bottom: none">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+          <h2>{% trans "Предупреждение" %}</h2>
+        </div>
+        <div>
+          <text class="body-text" style="color: #6c757d">
+            {% trans "Вы уверены, что хотите удалить профиль?" %}
+          </text>
+        </div>
+      </div>
+      <div
+        class="text-center modal-footer mb-3"
+        style="display: block; border-top: none"
+      >
+        <a href="{% url 'users:delete_user' user.id %}">
+          <button type="button" class="btn btn-danger me-3" style="width: 31%">
+            <span class="body-text"> {% trans "Удалить" %} </span>
+          </button></a>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+          style="width: 31%"
+        >
+          <span class="body-text">{% trans "Назад" %}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="delete_photo"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 16px">
+      <div class="modal-header" style="border-bottom: none">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body text-center">
+        <div>
+          <h2>{% trans "Предупреждение" %}</h2>
+        </div>
+        <div>
+          <text class="body-text" style="color: #6c757d">
+            {% trans "Вы уверены, что хотите удалить фотографию?" %}
+          </text>
+        </div>
+      </div>
+      <div
+        class="text-center modal-footer mb-3"
+        style="display: block; border-top: none"
+      >
+        <a href="{% url 'users:delete_user_image' user.id %}">
+          <button type="button" class="btn btn-danger me-3" style="width: 31%">
+            <span class="body-text"> {% trans "Удалить" %} </span>
+          </button></a>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          data-bs-dismiss="modal"
+          style="width: 31%"
+        >
+          <span class="body-text">{% trans "Назад" %}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="photo-load"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content text-center" style="border-radius: 8px">
+      <div class="modal-header" style="border-bottom: none; padding: 0">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          style="height: 24px; width: 24px"
+        ></button>
+      </div>
+      <div style="padding-top: 32px">
+        <h2 class="modal-title" id="exampleModalLabel">
+          {% trans "Загрузка новой фотографии" %}
+        </h2>
+      </div>
+
+      <div class="mx-auto" style="width: 78%">
+        <p class="body-text" style="color: var(--body-color); margin: 0">
+          {% blocktrans %}Друзьям будет проще узнать вас, если вы загрузите свою настоящую
+          фотографию. Вы можете загрузить изображение в формате JPG, GIF или PNG. (не более 5МБ){% endblocktrans %}
+        </p>
+      </div>
+      <div class="modal-body" style="padding: 48px">
+        <form method="post" enctype="multipart/form-data" accept="image/*">
+          <label for="{{ form.image.id_for_label }}" class="input-file">
+            <input type="file" name="file" />
+            <span class="body-text">{% trans "Выбрать файл" %}</span>
+          </label>
+        </form>
+      </div>
+      <div
+        class="modal-footer text-center d-block"
+        style="padding: 24px 0 24px 0"
+      >
+        <span class="mini-text" style="color: var(--body-color)"
+          >{% blocktrans %}Если у вас возникают проблемы с загрузкой, попробуйте выбрать
+          фотографию меньшего размера{% endblocktrans %}</span
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
